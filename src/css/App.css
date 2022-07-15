@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Poppins:wght@300;400;500;700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Montserrat", sans-serif;
+}
+
+div.navbar {
+  background-color: #f8f9fa;
+  box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2), 0px -7px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgb(0, 0, 0);
+  padding: 1% 10%;
+}
+div.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.navbar nav a.logo {
+  font-size: 150%;
+  font-weight: 600;
+  text-decoration: none;
+  color: #007bff;
+}
+div.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+div.navbar nav ul li a {
+  text-decoration: none;
+  color: #343a40;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Nato Sans", sans-serif;
+}
+
+div.main {
+  width: 100%;
+  height: 100%;
+}
+div.main .slider {
+  display: flex;
+  justify-content: center;
+}
+div.main .slider .swiper-wrapper .slide {
+  text-align: center;
+  width: 100%;
+  min-height: 75vh;
+}
+div.main .slider .swiper-wrapper .slide div.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 75vh;
+  color: #f8f9fa;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+div.main .slider .swiper-wrapper .slide div.contents div.quran {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+div.main .slider .swiper-wrapper .slide div.contents div.quran h1 {
+  font-size: 250%;
+  color: rgba(255, 255, 255, 0.8);
+}
+div.main .slider .swiper-wrapper .slide div.contents div.quran h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+div.main .slider .swiper-wrapper .slide-one {
+  background-image: url("../images/img-1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div.main .slider .swiper-wrapper .slide-two {
+  background-image: url("../images/img-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div.main .slider .swiper-wrapper .slide-three {
+  background-image: url("../images/img-3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div.main .slider .swiper-wrapper .slide-four {
+  background-image: url("../images/img-4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=App.css.map */
