@@ -10,9 +10,9 @@
 }
 
 div.navbar {
-  background-color: #f8f9fa;
+  background-color: #022E57;
   box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2), 0px -7px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgb(0, 0, 0);
-  padding: 1% 10%;
+  padding: 1% 2%;
 }
 div.navbar nav {
   display: flex;
@@ -23,20 +23,100 @@ div.navbar nav a.logo {
   font-size: 150%;
   font-weight: 600;
   text-decoration: none;
-  color: #007bff;
+  color: #eee;
 }
 div.navbar nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.navbar nav ul li {
+  position: relative;
 }
 div.navbar nav ul li a {
   text-decoration: none;
-  color: #343a40;
+  color: #eee;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+  padding: 10px;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Nato Sans", sans-serif;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+div.navbar nav ul li a:hover {
+  opacity: 0.8;
+}
+div.navbar nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+div.navbar nav ul li ul.dropdown {
+  position: absolute;
+  width: 250px;
+  background-color: #ffffff;
+  top: 45px;
+  left: 0;
+  list-style: none;
+  display: block;
+  list-style: none;
+  z-index: 3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.navbar nav ul li ul.dropdown::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+  z-index: 0;
+}
+div.navbar nav ul li ul.dropdown li a {
+  margin: 0;
+  display: inline-block;
+  padding: 10px 15px;
+  width: 100%;
+}
+div.navbar nav ul li ul.dropdown li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+div.navbar nav ul li ul.toggle {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.navbar nav a.admission {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+  background-color: #007bff;
+  color: #eee;
+  margin-left: 20px;
 }
 
 div.main {
@@ -50,7 +130,7 @@ div.main .slider {
 div.main .slider .swiper-wrapper .slide {
   text-align: center;
   width: 100%;
-  min-height: 75vh;
+  min-height: 80vh;
 }
 div.main .slider .swiper-wrapper .slide div.contents {
   display: flex;
@@ -58,16 +138,12 @@ div.main .slider .swiper-wrapper .slide div.contents {
   align-items: center;
   text-align: center;
   width: 100%;
-  min-height: 75vh;
-  color: #f8f9fa;
+  min-height: 80vh;
+  color: #eee;
   background-color: rgba(0, 0, 0, 0.8);
 }
 div.main .slider .swiper-wrapper .slide div.contents div.quran {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  flex-direction: column;
+  line-height: 1.5;
   gap: 25px;
 }
 div.main .slider .swiper-wrapper .slide div.contents div.quran h1 {
@@ -75,9 +151,37 @@ div.main .slider .swiper-wrapper .slide div.contents div.quran h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 div.main .slider .swiper-wrapper .slide div.contents div.quran h3 {
+  margin-top: 20px;
   color: rgba(255, 255, 255, 0.5);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+div.main .slider .swiper-wrapper .slide div.contents div.quran a.read-more {
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  background-color: #17a2b8;
+  color: #eee;
+  margin-top: 20px;
+}
+div.main .slider .swiper-wrapper .slide div.contents div.quran a.read-more:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 div.main .slider .swiper-wrapper .slide-one {
   background-image: url("../images/img-1.jpeg");
@@ -102,4 +206,361 @@ div.main .slider .swiper-wrapper .slide-four {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+div.main .slider .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+div.main .slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+div.main .slider .swiper-button-prev, div.main .slider .swiper-button-next {
+  display: none;
+}
+div.main div.enroll {
+  width: 100%;
+}
+div.main div.enroll div.contents {
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 5% 20%;
+  gap: 50px;
+}
+div.main div.enroll div.contents div.text-content h1 {
+  padding: 30px 0;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+div.main div.enroll div.contents div.text-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.8);
+}
+div.main div.enroll div.contents div.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  background-color: #25a745;
+  max-height: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+div.main div.enroll div.contents div.form-content h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "Montserrat", sans-serif;
+}
+div.main div.enroll div.contents div.form-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 400px;
+  margin-top: 20px;
+}
+div.main div.enroll div.contents div.form-content form input, div.main div.enroll div.contents div.form-content form select {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+div.main div.enroll div.contents div.form-content form input:focus, div.main div.enroll div.contents div.form-content form select:focus {
+  box-shadow: 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40, 0px 0px 2px #343a40;
+}
+div.main div.enroll div.contents div.form-content form .enroll-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+  background-color: #343a40;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 1076px) {
+  div.main div.enroll div.contents {
+    padding: 5% 10%;
+  }
+}
+@media (max-width: 776px) {
+  div.main div.enroll div.contents {
+    padding: 5% 5%;
+    display: block;
+  }
+  div.main div.enroll div.contents div.form-content {
+    margin: 20px 0;
+  }
+  div.main div.enroll div.contents div.form-content form {
+    width: 100%;
+  }
+  div.main div.enroll div.contents div.form-content form input, div.main div.enroll div.contents div.form-content form select {
+    width: 100%;
+  }
+}
+div.main div.courses {
+  padding: 2% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+div.main div.courses h1 {
+  color: #6c757d;
+  width: 200px;
+  position: relative;
+  padding-bottom: 5px;
+}
+div.main div.courses h1::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 50%;
+  height: 2px;
+  background-color: #25a745;
+}
+div.main div.courses h1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  width: 50%;
+  height: 2px;
+  background-color: #6c757d;
+}
+div.main div.courses h1 .our {
+  color: #25a745;
+}
+div.main div.courses div.contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 0;
+}
+div.main div.courses div.contents div.course {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+}
+div.main div.courses div.contents div.course:hover {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+div.main div.courses div.contents div.course header img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+div.main div.courses div.contents div.course header h2 {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #343a40;
+}
+div.main div.courses div.contents div.course div.body p {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+div.main div.courses div.contents div.course div.body a {
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  background-color: #343a40;
+  text-decoration: none;
+  color: #eee;
+  margin-top: 10px;
+  position: relative;
+}
+div.main div.courses div.contents div.course div.body a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+@media (max-width: 776px) {
+  div.main div.courses div.contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 520px) {
+  div.main div.courses div.contents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 1076px) {
+  div.main div.courses {
+    padding: 5% 10%;
+  }
+}
+@media (max-width: 776px) {
+  div.main div.courses {
+    padding: 5% 5%;
+  }
+}
+
+div.courses-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+@media (max-width: 1076px) {
+  div.courses-page {
+    padding: 5%;
+  }
+}
+div.courses-page h1 {
+  color: #6c757d;
+  width: 200px;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+div.courses-page h1::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 50%;
+  height: 2px;
+  background-color: #25a745;
+}
+div.courses-page h1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  width: 50%;
+  height: 2px;
+  background-color: #6c757d;
+}
+div.courses-page h1 .our {
+  color: #25a745;
+}
+div.courses-page div.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+div.courses-page div.contents div.course {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+div.courses-page div.contents div.course div.image-side {
+  width: 40%;
+  flex: 2;
+}
+div.courses-page div.contents div.course div.image-side img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.courses-page div.contents div.course div.text-side {
+  flex: 3;
+}
+div.courses-page div.contents div.course div.text-side h2 {
+  color: #343a40;
+  font-family: "Montserrat", sans-serif;
+}
+div.courses-page div.contents div.course div.text-side p {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+div.courses-page div.contents div.course div.text-side p strong {
+  font-size: 20px;
+  color: #25a745;
+}
+div.courses-page div.contents div.course div.text-side a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+  background-color: #25a745;
+  color: #eee;
+}
+@media (max-width: 1076px) {
+  div.courses-page div.contents div.course {
+    display: block;
+  }
+  div.courses-page div.contents div.course div.image-side {
+    width: 100%;
+  }
+  div.courses-page div.contents div.course div.text-side {
+    padding-top: 20px;
+  }
+}
+
+div.sidenav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+div.sidenav-wrapper div.sidenav {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  padding: 1em;
+  background-color: #eee;
 }/*# sourceMappingURL=App.css.map */
