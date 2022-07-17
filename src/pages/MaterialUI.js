@@ -3,8 +3,8 @@ import { Typography, Button } from '@mui/material'
 
 const MaterialUI = () => {
   return (
-    <div>
-        <Typography variant='div' display='flex' flexDirection='column' justifyContent='center'>
+    <div style={{padding:'10em'}}>
+        <Typography variant='div' marginBottom='50px' display='flex' flexDirection='column' justifyContent='center'>
           <Typography 
           variant='h1'
           color="primary"
@@ -24,6 +24,18 @@ const MaterialUI = () => {
             Save Me
           </Button>
         </Typography>
+        <Button variant='contained'  marginRight="10px" color="secondary">
+            Submit
+        </Button>
+        <Button variant='contained'  marginRight="10px" color="success">
+            Link
+        </Button>
+        <Button variant='contained'  marginRight="10px" color="info">
+            Login
+        </Button>
+        <Button variant='contained'  marginRight="10px" color="primary">
+            Signup
+        </Button>
     </div>
   )
 }
