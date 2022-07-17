@@ -600,9 +600,54 @@ div.sidenav-wrapper{
   z-index: 5;
   div.sidenav{
     position: relative;
+    box-shadow: 1px 0px 10px rgba(0,0,0,.3);
     width: 350px;
     height: 100%;
     padding: 1em;
     background-color: $light;
+
+    div.sidenav-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1{
+        a{
+          text-decoration: none;
+          color: $dark;
+          font-size: 75%;
+          font-weight: 500;
+          font-family: $motserrat;
+        }
+      }
+      button{
+        outline: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+          background-color: rgba(0,0,0,.2);
+        }
+        img{
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
   }
+
+
+}
+div.sidenav-wrapper.sidenav-wrapper-toggle{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+div.sidenav-toggle{
+  margin-left: -350px;
+  transition: margin-left .3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
