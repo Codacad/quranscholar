@@ -650,33 +650,37 @@ div.team div.meat-out-team div.contents p {
   line-height: 1.8;
 }
 div.team div.team-contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
   margin-top: 50px;
 }
-div.team div.team-contents div.my-slide {
+div.team div.team-contents div.card {
   border-radius: 5px;
   padding: 20px;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-div.team div.team-contents div.my-slide header {
+div.team div.team-contents div.card header {
   width: 100%;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-div.team div.team-contents div.my-slide header img {
+div.team div.team-contents div.card header img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-div.team div.team-contents div.my-slide:hover {
+div.team div.team-contents div.card:hover {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-div.team div.team-contents div.my-slide:hover header {
+div.team div.team-contents div.card:hover header {
   position: relative;
 }
-div.team div.team-contents div.my-slide:hover header::after {
+div.team div.team-contents div.card:hover header::after {
   display: block;
   position: absolute;
   content: "";
@@ -688,42 +692,42 @@ div.team div.team-contents div.my-slide:hover header::after {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 12;
 }
-div.team div.team-contents div.my-slide:hover header img {
+div.team div.team-contents div.card:hover header img {
   transform: scale(1.1);
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-div.team div.team-contents div.my-slide div.body {
+div.team div.team-contents div.card div.body {
   padding: 15px 0;
 }
-div.team div.team-contents div.my-slide div.body h2 {
+div.team div.team-contents div.card div.body h2 {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
-div.team div.team-contents div.my-slide div.body h3 {
+div.team div.team-contents div.card div.body h3 {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 10px 0;
 }
-div.team div.team-contents div.my-slide div.body h4 {
+div.team div.team-contents div.card div.body h4 {
   font-size: 75%;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-div.team div.team-contents div.my-slide div.team-footer {
+div.team div.team-contents div.card div.team-footer {
   display: flex;
   justify-content: flex-start;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
 }
-div.team div.team-contents div.my-slide div.team-footer svg {
+div.team div.team-contents div.card div.team-footer svg {
   width: 30px;
   height: 20px;
   cursor: pointer;
   margin-right: 10px;
 }
-div.team div.team-contents div.my-slide div.team-footer svg:hover {
+div.team div.team-contents div.card div.team-footer svg:hover {
   opacity: 0.8;
 }
 

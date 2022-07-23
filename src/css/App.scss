@@ -746,8 +746,12 @@ div.team{
     }
   }
   div.team-contents{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
     margin-top: 50px;
-    div.my-slide{
+    div.card{
       border-radius: 5px;
       padding: 20px;
       transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
