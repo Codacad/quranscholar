@@ -61,51 +61,6 @@ div.navbar nav ul li a:hover::after {
   bottom: 0;
   background-color: #ffffff;
 }
-div.navbar nav ul li ul.dropdown {
-  position: absolute;
-  width: 250px;
-  background-color: #ffffff;
-  top: 45px;
-  left: 0;
-  list-style: none;
-  display: block;
-  list-style: none;
-  z-index: 3;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-div.navbar nav ul li ul.dropdown::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 70px;
-  width: 20px;
-  height: 20px;
-  background-color: #eee;
-  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.2);
-  transform: rotate(-45deg);
-  z-index: 0;
-}
-div.navbar nav ul li ul.dropdown li a {
-  margin: 0;
-  display: inline-block;
-  padding: 10px 15px;
-  width: 100%;
-}
-div.navbar nav ul li ul.dropdown li a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-}
-div.navbar nav ul li ul.toggle {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
 div.navbar nav a.admission {
   display: inline-block;
   text-decoration: none;
@@ -218,6 +173,8 @@ div.main .slider .swiper-button-prev, div.main .slider .swiper-button-next {
 }
 div.main div.enroll {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 div.main div.enroll div.contents {
   position: relative;
@@ -311,6 +268,43 @@ div.main div.enroll div.contents div.form-content form .enroll-btn {
   div.main div.enroll div.contents div.form-content form input, div.main div.enroll div.contents div.form-content form select {
     width: 100%;
   }
+}
+div.main div.enroll div.achievements {
+  background-color: #022E57;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.main div.enroll div.achievements div.achieved h1 {
+  color: #fff;
+}
+div.main div.enroll div.achievements div.achievement-contents {
+  display: flex;
+  padding: 5% 0;
+  gap: 30px;
+}
+div.main div.enroll div.achievements div.achievement-contents .achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #fff;
+}
+div.main div.enroll div.achievements div.achievement-contents .achievement svg, div.main div.enroll div.achievements div.achievement-contents .achievement h3, div.main div.enroll div.achievements div.achievement-contents .achievement span {
+  margin: 20px;
+  text-align: center;
+}
+div.main div.enroll div.achievements div.achievement-contents .achievement svg {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+}
+div.main div.enroll div.achievements div.achievement-contents .achievement h3 {
+  font-size: 400%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 div.main div.courses {
   padding: 2% 15%;
@@ -605,4 +599,246 @@ div.sidenav-wrapper.sidenav-wrapper-toggle {
 div.sidenav-toggle {
   margin-left: -350px;
   transition: margin-left 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+div.team {
+  padding: 5% 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+div.team div.meat-out-team {
+  padding: 0 0;
+  width: 100%;
+}
+div.team div.meat-out-team h1 {
+  color: #6c757d;
+  width: 350px;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+div.team div.meat-out-team h1::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 50%;
+  height: 2px;
+  background-color: #25a745;
+}
+div.team div.meat-out-team h1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  width: 50%;
+  height: 2px;
+  background-color: #6c757d;
+}
+div.team div.meat-out-team h1 .our {
+  color: #25a745;
+}
+div.team div.meat-out-team div.contents p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+div.team div.team-contents {
+  margin-top: 50px;
+}
+div.team div.team-contents div.my-slide {
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.team div.team-contents div.my-slide header {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.team div.team-contents div.my-slide header img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.team div.team-contents div.my-slide:hover {
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+div.team div.team-contents div.my-slide:hover header {
+  position: relative;
+}
+div.team div.team-contents div.my-slide:hover header::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+div.team div.team-contents div.my-slide:hover header img {
+  transform: scale(1.1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+div.team div.team-contents div.my-slide div.body {
+  padding: 15px 0;
+}
+div.team div.team-contents div.my-slide div.body h2 {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+div.team div.team-contents div.my-slide div.body h3 {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+}
+div.team div.team-contents div.my-slide div.body h4 {
+  font-size: 75%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+div.team div.team-contents div.my-slide div.team-footer {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+div.team div.team-contents div.my-slide div.team-footer svg {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+div.team div.team-contents div.my-slide div.team-footer svg:hover {
+  opacity: 0.8;
+}
+
+div.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 5%;
+  background-color: #022E57;
+  color: #eee;
+}
+div.footer div.header {
+  display: flex;
+  justify-content: center;
+}
+div.footer div.header div.header-content {
+  width: 300px;
+  text-align: center;
+}
+div.footer div.header div.header-content a {
+  text-decoration: none;
+  color: #eee;
+}
+div.footer div.header div.header-content a h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+div.footer div.header div.header-content a h1::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 50%;
+  height: 2px;
+  background-color: #25a745;
+}
+div.footer div.header div.header-content a h1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  width: 50%;
+  height: 2px;
+  background-color: #6c757d;
+}
+div.footer div.header div.header-content a h1 .our {
+  color: #25a745;
+}
+div.footer div.contents {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+div.footer div.contents .quick-links, div.footer div.contents .address, div.footer div.contents .social-medias {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.footer div.contents .quick-links a, div.footer div.contents .address a, div.footer div.contents .social-medias a {
+  text-decoration: none;
+  color: #6c757d;
+}
+div.footer div.contents .quick-links a:hover, div.footer div.contents .address a:hover, div.footer div.contents .social-medias a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+div.footer div.contents .quick-links h2, div.footer div.contents .address h2, div.footer div.contents .social-medias h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 150%;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 1em 0;
+}
+div.footer div.contents .quick-links ul, div.footer div.contents .address ul, div.footer div.contents .social-medias ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.footer div.contents .quick-links ul li a, div.footer div.contents .address ul li a, div.footer div.contents .social-medias ul li a {
+  text-decoration: none;
+}
+div.footer div.contents .quick-links ul li a:hover, div.footer div.contents .address ul li a:hover, div.footer div.contents .social-medias ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+div.footer div.contents .quick-links .address-content, div.footer div.contents .address .address-content, div.footer div.contents .social-medias .address-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.footer div.contents .quick-links .address-content .address, div.footer div.contents .quick-links .address-content .mail, div.footer div.contents .quick-links .address-content .call, div.footer div.contents .address .address-content .address, div.footer div.contents .address .address-content .mail, div.footer div.contents .address .address-content .call, div.footer div.contents .social-medias .address-content .address, div.footer div.contents .social-medias .address-content .mail, div.footer div.contents .social-medias .address-content .call {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #6c757d;
+}
+div.footer div.contents .quick-links .address-content .address svg, div.footer div.contents .quick-links .address-content .mail svg, div.footer div.contents .quick-links .address-content .call svg, div.footer div.contents .address .address-content .address svg, div.footer div.contents .address .address-content .mail svg, div.footer div.contents .address .address-content .call svg, div.footer div.contents .social-medias .address-content .address svg, div.footer div.contents .social-medias .address-content .mail svg, div.footer div.contents .social-medias .address-content .call svg {
+  width: 10%;
+}
+div.footer div.contents .quick-links .address-content .address span, div.footer div.contents .quick-links .address-content .address link, div.footer div.contents .quick-links .address-content .mail span, div.footer div.contents .quick-links .address-content .mail link, div.footer div.contents .quick-links .address-content .call span, div.footer div.contents .quick-links .address-content .call link, div.footer div.contents .address .address-content .address span, div.footer div.contents .address .address-content .address link, div.footer div.contents .address .address-content .mail span, div.footer div.contents .address .address-content .mail link, div.footer div.contents .address .address-content .call span, div.footer div.contents .address .address-content .call link, div.footer div.contents .social-medias .address-content .address span, div.footer div.contents .social-medias .address-content .address link, div.footer div.contents .social-medias .address-content .mail span, div.footer div.contents .social-medias .address-content .mail link, div.footer div.contents .social-medias .address-content .call span, div.footer div.contents .social-medias .address-content .call link {
+  width: 90%;
+}
+div.footer div.contents .quick-links .social-media-content, div.footer div.contents .address .social-media-content, div.footer div.contents .social-medias .social-media-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+div.footer div.contents .quick-links .social-media-content a, div.footer div.contents .address .social-media-content a, div.footer div.contents .social-medias .social-media-content a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=App.css.map */

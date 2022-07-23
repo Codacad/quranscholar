@@ -4,6 +4,8 @@ import Navbar from './componets/Navbar';
 import Main from './pages/Main';
 import Courses from './pages/Courses';
 import Sidenav from './componets/Sidenav';
+import Footer from './componets/Footer';
+import Quran from './pages/Quran';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Main />}></Route>
             <Route path='/courses' element={<Courses />}></Route>
+            <Route path='/quran' element={<Quran />}></Route>
           </Routes>
+          <Footer />
         </Router>
     </div>
   );

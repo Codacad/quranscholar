@@ -1,4 +1,5 @@
 import React from 'react'
+import { School, Done, Task, Elderly, Flag } from '@mui/icons-material'
 
 const Enroll = () => {
   return (
@@ -25,6 +26,33 @@ const Enroll = () => {
                     </select>
                     <button className='enroll-btn'>Enroll</button>
                 </form>
+            </div>
+        </div>
+        <div className="achievements">
+            <div className="achieved">
+                <h1>What we have achieved this year successfully!</h1>
+            </div>
+            <div className="achievement-contents">
+                <div className="achievement admissions">
+                    <School></School>
+                    <h3 data-val="250">0</h3>
+                    <span>Admissions this year</span>
+                </div>
+                <div className="achievement graduated">
+                    <Task></Task>
+                    <h3 data-val="220">0</h3>
+                    <span>Students have learnt to read Qur'an successfully</span>
+                </div>
+                <div className="achievement elder">
+                    <Elderly></Elderly>
+                    <h3 data-val="29">0</h3>
+                    <span>Students over the age of 60</span>
+                </div>
+                <div className="achievement foreigner">
+                    <Flag></Flag>
+                    <h3 data-val="89">0</h3>
+                    <span>Students from another countries</span>
+                </div>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
+import { Button } from '@mui/material'
 
 export default function Slider() {
   return (
@@ -25,7 +26,7 @@ export default function Slider() {
                     <div className="quran">
                         <h1>(الحدیث) خَيْرُکُم مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</h1>
                         <h3>"The best among you (Muslims) are those who learn the Qur'an and teach it.</h3>
-                        <Link to="#read-more" className="read-more">Read More</Link>
+                        <Link to="#read-more" className="read-more">Read More</Link>       
                     </div>
                 </div>
             </div>
