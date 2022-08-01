@@ -69,6 +69,9 @@ $white:#ffffff;
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 .App {
   font-family: $motserrat;
 }
@@ -372,7 +375,7 @@ div.main{
     div.achievements{
       background-color: #022E57;
       padding: 5% 10%;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       div.achieved{
@@ -825,8 +828,31 @@ div.team{
       }
     }
   }
+  @media (max-width:776px){
+    div.team-contents{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width:576px){
+    div.team-contents{
+      grid-template-columns: repeat(1, 1fr);
+      div.card{
+        header{
+          img{
+            height: 500px;
+          }
+        }
+      }
+    }
+  }
 }
 
+// Team MEdia queries
+@media (max-width:776px){
+  div.team{
+    padding: 5% 5%;
+  }
+}
 
 // Footer
 div.footer{
@@ -943,6 +969,16 @@ div.footer{
           gap: 10px;
         }
       }
+    }
+  }
+  div.copyright{
+    padding: 10px 0;
+    color: #fff;
+    opacity: .5;
+  }
+  @media (max-width:776px){
+    div.contents{
+     display: block;
     }
   }
 }

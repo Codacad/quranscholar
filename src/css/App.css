@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   font-family: "Montserrat", sans-serif;
 }
@@ -272,7 +276,7 @@ div.main div.enroll div.contents div.form-content form .enroll-btn {
 div.main div.enroll div.achievements {
   background-color: #022E57;
   padding: 5% 10%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -730,7 +734,25 @@ div.team div.team-contents div.card div.team-footer svg {
 div.team div.team-contents div.card div.team-footer svg:hover {
   opacity: 0.8;
 }
+@media (max-width: 776px) {
+  div.team div.team-contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  div.team div.team-contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  div.team div.team-contents div.card header img {
+    height: 500px;
+  }
+}
 
+@media (max-width: 776px) {
+  div.team {
+    padding: 5% 5%;
+  }
+}
 div.footer {
   display: flex;
   flex-direction: column;
@@ -845,4 +867,14 @@ div.footer div.contents .quick-links .social-media-content a, div.footer div.con
   display: flex;
   align-items: center;
   gap: 10px;
+}
+div.footer div.copyright {
+  padding: 10px 0;
+  color: #fff;
+  opacity: 0.5;
+}
+@media (max-width: 776px) {
+  div.footer div.contents {
+    display: block;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -14,9 +14,9 @@ const Footer = () => {
                 <h2>Quick Link</h2>
                 <ul>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>All Courses</Link></li>
+                    <li><Link to='/courses'>Courses</Link></li>
                     <li><Link to='/'>Image Gallery</Link></li>
-                    <li><Link to='/'>Addmission</Link></li>
+                    <li><a href='https://surveyheart.com/form/62e6d76024ff9216a53b014f'>Addmission</a></li>
                     <li><Link to='/'>Become A Teacher</Link></li>
                 </ul>
             </div>
@@ -40,24 +40,27 @@ const Footer = () => {
             <div className="social-medias">
                 <h2>Social Medias</h2>
                 <div className="social-media-content">
-                    <Link to="#">
+                    <a href="https://www.facebook.com/profile.php?id=100063453414094" target='_blank'>
                         <Facebook></Facebook>
                         <span>Facebook</span>
-                    </Link>
-                    <Link to="#">
+                    </a>
+                    <a href="https://www.twitter.com/farmanfarooqui4" target='_blank'>
                         <Twitter></Twitter>
                         <span>Twitter</span>
-                    </Link>
-                    <Link to="#">
+                    </a>
+                    <a href="https://www.instagram.com/quran_scholar" target='_blank'>
                         <Instagram></Instagram>
                         <span>Instagram</span>
-                    </Link>
-                    <Link to="#">
+                    </a>
+                    <a href="#">
                         <YouTube></YouTube>
                         <span>Youtube</span>
-                    </Link>
+                    </a>
                 </div>
             </div>
+        </div>
+        <div className="copyright">
+            &copy; Copyright Quran Scholar 2022-2024
         </div>
     </div>
   )

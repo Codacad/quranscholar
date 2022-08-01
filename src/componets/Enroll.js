@@ -7,7 +7,10 @@ const Enroll = () => {
         <div className="contents">
             <div className="text-content">
                 <h1>This is a better platform with limitted seats, hurry up.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti, magni unde esse tenetur alias distinctio numquam nulla et minus cum, consectetur, sit veniam ad doloribus. Vel illum eos saepe qui architecto, eligendi ipsa totam? Similique unde cumque fuga veritatis cupiditate obcaecati, itaque necessitatibus accusantium dolorem culpa debitis aliquid nam.</p>
+                <p>We are a team of high qualified Ulama to provide the Islamic courses such as Quran with Tajweed, Hadith, Tafseer, Fiqh,  Arabic and many more Islamic Sciences. 
+Our core aim is to spread the awareness of Islamic beliefs rooted in Quran and Sunnah among Muslims and non Muslims. we are working to fulfill this need  And many Muslims are benefiting from it.
+It is the responsibility of all of us to acquaint the Muslims with the Qur'an and Sunnah and to convey the knowledge of Islam to them.  We are working towards this goal.
+100+ Students are learning Qur'an with Tajweed and Islamic sciences all over the world and they are satisfied and happy with Quran Scholar.</p>
             </div>
             <div className="form-content">
                 <h1>Enroll Now</h1>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Courses = () => {
   return (
-    <div className='courses'>
+    <div className='courses' id='courses'>
         <h1><span className='our'>Our</span> Courses</h1>
         <div className="contents">
             <div className="course quran">
@@ -16,7 +16,7 @@ const Courses = () => {
                     <h2>Tajweed ul Quran</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>The Qur'an is the source of all knowledge and the holiest book...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const Courses = () => {
                     <h2>Fiqh ul Hanafi</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>Fiqh is Islamic jurisprudence  Fiqh is the human understanding and practices of...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Courses = () => {
                     <h2>Seerah</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>Seerah means the study of the life of the Prophet Muhammed ﷺ the...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>
@@ -46,7 +46,7 @@ const Courses = () => {
                     <h2>Hadith</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>Hadith have been called "the backbone" of Islamic civilization and within Islam the authority of...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const Courses = () => {
                     <h2>Arabic</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>Arabic was chosen by Allah, and our holy scriptures Qur'an and Hadith are written...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>
@@ -66,7 +66,7 @@ const Courses = () => {
                     <h2>Urdu</h2>
                 </header>
                 <div className="body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+                    <p>Urdu is the most widely spoken language in the subcontinent. Everyone is aware of its sweetness...</p>
                     <Link to="/courses">Read More</Link>
                 </div>
             </div>

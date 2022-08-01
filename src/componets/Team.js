@@ -1,9 +1,13 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-import Farman from '../images/team/farmanfarooqui.jpg'
+import Farman from '../images/team/Farman.png'
 import Tahir from '../images/team/tahirraza.jpg'
-import Mustafa from '../images/team/mustafaraza.jpg'
+import Mustafa from '../images/team/Mustafa.jpeg'
+import Afsar from '../images/team/Afsar.jpeg'
+import Nabil from '../images/team/Anis.jpg'
+import Rayyan from '../images/team/rayyan.jpg'
+import Avatar from '../images/team/avatar.svg'
 import { Face, Facebook } from '@mui/icons-material'
 import { Instagram } from '@mui/icons-material'
 import { Twitter } from '@mui/icons-material'
@@ -26,10 +30,10 @@ const Team = () => {
         <div className="team-contents">
             <div className="card farman">
                 <header>
-                    <img src={photo1} alt="" />
+                    <img src={Farman} alt="" />
                 </header>
                 <div className="body">
-                    <h2>Farman Farooqi</h2>
+                    <h2>Farman Farooqui</h2>
                     <h3>Manager</h3>
                     <h4>Hafiz, Aalim and Graduate</h4>
                 </div>
@@ -41,10 +45,10 @@ const Team = () => {
             </div>
             <div className="card tahir">
                 <header>
-                    <img src={photo3} alt="" />
+                    <img src={Tahir} alt="" />
                 </header>
                 <div className="body">
-                    <h2>Tahir Raza</h2>
+                    <h2>Tahir Habib</h2>
                     <h3>Teacher</h3>
                     <h4>Hafiz, Aalim, and Master in Islamic Studies</h4>
                 </div>
@@ -56,7 +60,7 @@ const Team = () => {
             </div>
             <div className="card afsar">
                 <header>
-                    <img src={photo2} alt="" />
+                    <img src={Afsar} alt="" />
                 </header>
                 <div className="body">
                     <h2>Shaykh Afsar Alimi</h2>
@@ -71,12 +75,87 @@ const Team = () => {
             </div>
             <div className="card mustafa">
                 <header>
-                    <img src={photo2} alt="" />
+                    <img src={Mustafa} alt="" />
                 </header>
                 <div className="body">
                     <h2>Mustafa Raza</h2>
                     <h3>Teacher</h3>
                     <h4>Aalim and Graduate</h4>
+                </div>
+                <div className="team-footer">
+                    <Facebook></Facebook>
+                    <Twitter></Twitter>
+                    <Instagram></Instagram>
+                </div>
+            </div>
+            <div className="card anis">
+                <header>
+                    <img src={Nabil} alt="" />
+                </header>
+                <div className="body">
+                    <h2>Anees Nabeel Azhari</h2>
+                    <h3>Teacher</h3>
+                    <h4>Master in Islamic Theology - Al Azhar University, Cairo, Egypt.</h4>
+                </div>
+                <div className="team-footer">
+                    <Facebook></Facebook>
+                    <Twitter></Twitter>
+                    <Instagram></Instagram>
+                </div>
+            </div>
+            <div className="card rayyan">
+                <header>
+                    <img src={Rayyan} alt="" />
+                </header>
+                <div className="body">
+                    <h2>Rayyan Raza</h2>
+                    <h3>Teacher</h3>
+                    <h4>Aalim and Graduate</h4>
+                </div>
+                <div className="team-footer">
+                    <Facebook></Facebook>
+                    <Twitter></Twitter>
+                    <Instagram></Instagram>
+                </div>
+            </div>
+            <div className="card noori">
+                <header>
+                    <img src={Avatar} alt="" />
+                </header>
+                <div className="body">
+                    <h2>Umme Ruman Noori</h2>
+                    <h3>Teacher</h3>
+                    <h4>Fazila</h4>
+                </div>
+                <div className="team-footer">
+                    <Facebook></Facebook>
+                    <Twitter></Twitter>
+                    <Instagram></Instagram>
+                </div>
+            </div>
+            <div className="card bushra">
+                <header>
+                    <img src={Avatar} alt="" />
+                </header>
+                <div className="body">
+                    <h2>Bushra Fatima</h2>
+                    <h3>Teacher</h3>
+                    <h4>Fazila</h4>
+                </div>
+                <div className="team-footer">
+                    <Facebook></Facebook>
+                    <Twitter></Twitter>
+                    <Instagram></Instagram>
+                </div>
+            </div>
+            <div className="card muddassira">
+                <header>
+                    <img src={Avatar} alt="" />
+                </header>
+                <div className="body">
+                    <h2>Mudassria Habib</h2>
+                    <h3>Teacher</h3>
+                    <h4>Fazila</h4>
                 </div>
                 <div className="team-footer">
                     <Facebook></Facebook>

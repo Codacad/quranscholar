@@ -64,7 +64,13 @@ const Courses = () => {
                 </div>
                 <div className="text-side">
                     <h2>Arabic</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur in culpa ex deleniti fuga animi sit ipsum! Perspiciatis velit repudiandae exercitationem ab fugit, in rerum doloribus impedit sequi illo iusto asperiores corrupti quod veritatis distinctio qui! Quaerat possimus quidem vel reprehenderit perferendis temporibus tempora. A veritatis et deserunt cumque eos perspiciatis itaque aliquid, hic voluptatem ex laborum fuga earum animi consequuntur expedita perferendis unde beatae mollitia voluptates labore repellat similique? Magni reprehenderit unde suscipit deleniti esse fugiat consequatur rerum consectetur dolor ad voluptatum alias porro, aliquid obcaecati. Quis molestiae tenetur sapiente sit illum suscipit amet blanditiis culpa aut eum.</p>
+                    <p>Arabic was chosen by Allah, and our holy scriptures Qur'an and Hadith are written entirely in Arabic. Therefore, every Muslim must learn to read and speak Arabic, the language of the prophet, in order to be able to understand and interpret the word of Allah through prayer and reading the Quran. Because Arabic is considered the authentic language, Taking courses in Arabic means learning about Islam deeply In fact, the Prophet in fact, the Prophet ﷺ advised every Muslim to learn Arabic. According to a hadith reported from Umar ibn al-Khattab (رضی اللہ عنہ), he said:</p>
+                    <p style={{textAlign:'right'}}>
+                        
+                        <strong>“تَعَلَّمُوا الْعَرَبِيَّةَ؛ فَإِنَّهَا تُثَبِّتُ الْعَقْلَ، وَتَزِيدُ فِي الْمُرُوءَةِ”</strong>
+                        <br />
+                        <i>“Learn Arabic for it strengthens the mind and enhances chivalry” [Al-Baihaqi, Shu’ab El-Eman ]</i>
+                    </p>
                     <Link to="/apply">Apply</Link>
                 </div>
             </div>
@@ -74,7 +80,13 @@ const Courses = () => {
                 </div>
                 <div className="text-side">
                     <h2>Urdu</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur in culpa ex deleniti fuga animi sit ipsum! Perspiciatis velit repudiandae exercitationem ab fugit, in rerum doloribus impedit sequi illo iusto asperiores corrupti quod veritatis distinctio qui! Quaerat possimus quidem vel reprehenderit perferendis temporibus tempora. A veritatis et deserunt cumque eos perspiciatis itaque aliquid, hic voluptatem ex laborum fuga earum animi consequuntur expedita perferendis unde beatae mollitia voluptates labore repellat similique? Magni reprehenderit unde suscipit deleniti esse fugiat consequatur rerum consectetur dolor ad voluptatum alias porro, aliquid obcaecati. Quis molestiae tenetur sapiente sit illum suscipit amet blanditiis culpa aut eum.</p>
+                    <p>Urdu is the most widely spoken language in the subcontinent.  Everyone is aware of its sweetness and softness and this language is developing rapidly all over the world. Urdu is probably one of the most sweetest language one could learn. There is a couplet in Urdu. "Woh Bole Toh Har Lafz se Khushbo Aaye"
+                        "Aisi Boli Wahi Bole Jise Urdu Aaye".
+                        
+                        <br /><br />
+                        If you live in the subcontinent and are an Islamic student, it becomes necessary for you to learn Urdu because the Islamic literature here is mostly in Urdu.
+                        </p>
+                    
                     <Link to="/apply">Apply</Link>
                 </div>
             </div>
