@@ -4,6 +4,7 @@ import Enroll from '../componets/Enroll'
 import Slider from '../componets/Slides'
 import Team from '../componets/Team'
 import Testimonials from '../componets/Testimonials'
+import Sidenav from  '../componets/Sidenav'
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         <Enroll />
         <Courses />
         <Team />
+        <Sidenav />
     </div>
   )
 }

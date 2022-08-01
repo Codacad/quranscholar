@@ -13,11 +13,11 @@ const Footer = () => {
             <div className="quick-links">
                 <h2>Quick Link</h2>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/courses'>Courses</Link></li>
-                    <li><Link to='/'>Image Gallery</Link></li>
+                    <li><Link to='/quranscholar'>Home</Link></li>
+                    <li><Link to='/quranscholar/courses'>Courses</Link></li>
+                    <li style={{display:'none'}}><Link to='/quranscholar'>Image Gallery</Link></li>
                     <li><a href='https://surveyheart.com/form/62e6d76024ff9216a53b014f'>Addmission</a></li>
-                    <li><Link to='/'>Become A Teacher</Link></li>
+                    <li style={{display:'none'}}><Link to='/quranscholar'>Become A Teacher</Link></li>
                 </ul>
             </div>
             <div className="address">

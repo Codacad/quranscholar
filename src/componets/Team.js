@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 import Farman from '../images/team/Farman.png'
-import Tahir from '../images/team/tahirraza.jpg'
+import Tahir from '../images/team/Tahir.jpeg'
 import Mustafa from '../images/team/Mustafa.jpeg'
 import Afsar from '../images/team/Afsar.jpeg'
 import Nabil from '../images/team/Anis.jpg'
@@ -17,7 +17,7 @@ import photo3 from '../images/photos/photo2.avif'
 
 const Team = () => {
   return (
-    <div className='team'>
+    <div className='team' id='team'>
         <div className="meat-out-team">
             <h1>Meet Out Team</h1>
             <div className="contents">
@@ -38,9 +38,9 @@ const Team = () => {
                     <h4>Hafiz, Aalim and Graduate</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card tahir">
@@ -53,9 +53,9 @@ const Team = () => {
                     <h4>Hafiz, Aalim, and Master in Islamic Studies</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card afsar">
@@ -68,9 +68,9 @@ const Team = () => {
                     <h4>Aalim and Master in Islamic Studies</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card mustafa">
@@ -83,9 +83,9 @@ const Team = () => {
                     <h4>Aalim and Graduate</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card anis">
@@ -98,9 +98,9 @@ const Team = () => {
                     <h4>Master in Islamic Theology - Al Azhar University, Cairo, Egypt.</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card rayyan">
@@ -113,9 +113,9 @@ const Team = () => {
                     <h4>Aalim and Graduate</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card noori">
@@ -128,9 +128,9 @@ const Team = () => {
                     <h4>Fazila</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card bushra">
@@ -143,9 +143,9 @@ const Team = () => {
                     <h4>Fazila</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
             <div className="card muddassira">
@@ -158,9 +158,9 @@ const Team = () => {
                     <h4>Fazila</h4>
                 </div>
                 <div className="team-footer">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
+                    <a href=""><Facebook></Facebook></a>
+                    <a href=""><Twitter></Twitter></a>
+                    <a href=""><Instagram></Instagram></a>
                 </div>
             </div>
         </div>

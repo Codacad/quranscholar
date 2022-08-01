@@ -5,13 +5,13 @@ import Close from '../icons/close.svg'
 const Sidenav = () => {
 
     const handleSidenavToggle = () => {
-        document.querySelector('.sidenav-wrapper').classList.add('sidenav-wrapper-toggle')
-        document.querySelector('.sidenav').classList.add('sidenav-toggle')
+        document.querySelector('.sidenav-wrapper').classList.remove('sidenav-wrapper-toggle')
+        document.querySelector('.sidenav').classList.remove('sidenav-toggle')
     }
 
   return (
-    <div className='sidenav-wrapper'>
-        <div className="sidenav">
+    <div className='sidenav-wrapper sidenav-wrapper-toggle'>
+        <div className="sidenav sidenav-toggle">
             <div className="sidenav-header">
                 <h1><Link to="/" className='logo'>Quran Scholar</Link></h1>
                 <button onClick={() => handleSidenavToggle()}><img src={Close} alt="" /></button>

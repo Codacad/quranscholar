@@ -6,7 +6,7 @@ const Enroll = () => {
     <div className='enroll'>
         <div className="contents">
             <div className="text-content">
-                <h1>This is a better platform with limitted seats, hurry up.</h1>
+                <h1>Grab your seat, hurry up.</h1>
                 <p>We are a team of high qualified Ulama to provide the Islamic courses such as Quran with Tajweed, Hadith, Tafseer, Fiqh,  Arabic and many more Islamic Sciences. 
 Our core aim is to spread the awareness of Islamic beliefs rooted in Quran and Sunnah among Muslims and non Muslims. we are working to fulfill this need  And many Muslims are benefiting from it.
 It is the responsibility of all of us to acquaint the Muslims with the Qur'an and Sunnah and to convey the knowledge of Islam to them.  We are working towards this goal.

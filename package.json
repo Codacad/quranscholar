@@ -1,6 +1,6 @@
 {
-  "homepage": "http://codacad.github.io/aluloomonline",
-  "name": "alfurqanacademy",
+  "homepage": "http://codacad.github.io/quranscholar",
+  "name": "quranscholar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
