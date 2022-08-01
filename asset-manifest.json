@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quranscholar/static/css/main.41839a18.css",
-    "main.js": "/quranscholar/static/js/main.3a9acdfc.js",
+    "main.css": "/quranscholar/static/css/main.74bf6926.css",
+    "main.js": "/quranscholar/static/js/main.cc1b74e1.js",
     "static/media/Farman.png": "/quranscholar/static/media/Farman.ff8024046ddd931250d0.png",
     "static/media/hadith.avif": "/quranscholar/static/media/hadith.6d827c76b0f108108dfc.avif",
     "static/media/Mustafa.jpeg": "/quranscholar/static/media/Mustafa.5c64bac306215befd825.jpeg",
@@ -13,7 +13,7 @@
     "static/media/seerah.avif": "/quranscholar/static/media/seerah.2d0e706bb654062fd57c.avif",
     "static/media/fiqh.avif": "/quranscholar/static/media/fiqh.92fe0139e03901f443e7.avif",
     "static/media/Anis.jpg": "/quranscholar/static/media/Anis.0e6711992a1df952ef5e.jpg",
-    "static/media/tahirraza.jpg": "/quranscholar/static/media/tahirraza.03a8ef3618442830deee.jpg",
+    "static/media/Tahir.jpeg": "/quranscholar/static/media/Tahir.ddc2fd0827a305f5031d.jpeg",
     "static/media/rayyan.jpg": "/quranscholar/static/media/rayyan.d5cd54872e3bd31ad93f.jpg",
     "static/media/img-3.jpeg": "/quranscholar/static/media/img-3.ff89e2956fe80ccc12c3.jpeg",
     "static/media/Afsar.jpeg": "/quranscholar/static/media/Afsar.253a1d3ec627695e8cf5.jpeg",
@@ -21,11 +21,11 @@
     "static/media/avatar.svg": "/quranscholar/static/media/avatar.ed0aa0799159e6695cf2e84b04c1ca0e.svg",
     "index.html": "/quranscholar/index.html",
     "static/media/close.svg": "/quranscholar/static/media/close.21c094ffe1ddc3d685f350ef89339f81.svg",
-    "main.41839a18.css.map": "/quranscholar/static/css/main.41839a18.css.map",
-    "main.3a9acdfc.js.map": "/quranscholar/static/js/main.3a9acdfc.js.map"
+    "main.74bf6926.css.map": "/quranscholar/static/css/main.74bf6926.css.map",
+    "main.cc1b74e1.js.map": "/quranscholar/static/js/main.cc1b74e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.41839a18.css",
-    "static/js/main.3a9acdfc.js"
+    "static/css/main.74bf6926.css",
+    "static/js/main.cc1b74e1.js"
   ]
 }
