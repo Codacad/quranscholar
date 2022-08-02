@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/quranscholar/static/css/main.480ee354.css",
+    "main.css": "/quranscholar/static/css/main.97b1cf0e.css",
     "main.js": "/quranscholar/static/js/main.e8c37cd6.js",
     "static/media/Farman.png": "/quranscholar/static/media/Farman.ff8024046ddd931250d0.png",
     "static/media/hadith.avif": "/quranscholar/static/media/hadith.6d827c76b0f108108dfc.avif",
@@ -21,11 +21,11 @@
     "static/media/avatar.svg": "/quranscholar/static/media/avatar.ed0aa0799159e6695cf2e84b04c1ca0e.svg",
     "index.html": "/quranscholar/index.html",
     "static/media/close.svg": "/quranscholar/static/media/close.21c094ffe1ddc3d685f350ef89339f81.svg",
-    "main.480ee354.css.map": "/quranscholar/static/css/main.480ee354.css.map",
+    "main.97b1cf0e.css.map": "/quranscholar/static/css/main.97b1cf0e.css.map",
     "main.e8c37cd6.js.map": "/quranscholar/static/js/main.e8c37cd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.480ee354.css",
+    "static/css/main.97b1cf0e.css",
     "static/js/main.e8c37cd6.js"
   ]
 }
