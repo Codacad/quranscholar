@@ -74,9 +74,12 @@ html{
 }
 .App {
   font-family: $motserrat;
+  margin: 0;
+  width: 100%;
 }
 
 div.navbar{
+  display: block;
   position: fixed;
   width: 100%;
   top: 0;
@@ -147,12 +150,14 @@ div.navbar{
     @media (max-width:776px){
       div.nav-contents{
         display: none;
+        padding: 0;
       }
       div.mobile-nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+        margin: 0;
         width: 100%;
         a{
           display: inline-block;
@@ -174,8 +179,8 @@ div.navbar{
 
 // Main Section
 div.main{
-  // padding: 5% 10%;
- margin-top: 69px;
+  margin: 0;
+  margin-top: 69px;
   width: 100%;
   height: 100%;
   // Slider
@@ -209,6 +214,7 @@ div.main{
               color: rgba(255,255,255,.5);
               font-family: $poppins;
               font-weight: 400;
+              padding: 0 20px
             }
             a.read-more{
               @include btn-sm;
@@ -440,6 +446,30 @@ div.main{
       }
       .our{
         color: $success;
+      }
+    }
+    @media (max-width:776px){
+      h1{
+        font-size: 150%;
+        text-align: center;
+        width: 300px;
+        &::before{
+          bottom: -10px;
+          left: 30%;
+          width: 30%;
+          height: 2px;
+          background-color: $success;
+        }
+        &::after{
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          left: 40%;
+          width: 30%;
+          height: 2px;
+          background-color: $grey;
+        }
       }
     }
     div.contents{
@@ -742,6 +772,30 @@ div.team{
         color: $success;
       }
     }
+    @media (max-width:776px){
+      h1{
+        font-size: 150%;
+        text-align: center;
+        width: 300px;
+        &::before{
+          bottom: -10px;
+          left: 30%;
+          width: 30%;
+          height: 2px;
+          background-color: $success;
+        }
+        &::after{
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          left: 40%;
+          width: 30%;
+          height: 2px;
+          background-color: $grey;
+        }
+      }
+    }
     div.contents{
       p{
         color: rgba(0,0,0,.7);
@@ -907,6 +961,31 @@ div.footer{
             color: $success;
           }
         }
+        @media (max-width:776px){
+          h1{
+            font-size: 150%;
+            text-align: center;
+            margin-top: 20px;
+            width: 300px;
+            &::before{
+              bottom: -10px;
+              left: 30%;
+              width: 30%;
+              height: 2px;
+              background-color: $success;
+            }
+            &::after{
+              display: block;
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              left: 40%;
+              width: 30%;
+              height: 2px;
+              background-color: $grey;
+            }
+          }
+        }
       }
     }
   }
@@ -1013,4 +1092,14 @@ div.whatsapp{
     cursor: pointer;
    
   }
+}
+@media (max-width:776px){
+  div.whatsapp{
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
 }

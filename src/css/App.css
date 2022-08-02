@@ -11,9 +11,12 @@ html {
 
 .App {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  width: 100%;
 }
 
 div.navbar {
+  display: block;
   position: fixed;
   width: 100%;
   top: 0;
@@ -88,12 +91,14 @@ div.navbar nav div.mobile-nav {
 @media (max-width: 776px) {
   div.navbar nav div.nav-contents {
     display: none;
+    padding: 0;
   }
   div.navbar nav div.mobile-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    margin: 0;
     width: 100%;
   }
   div.navbar nav div.mobile-nav a {
@@ -112,6 +117,7 @@ div.navbar nav div.mobile-nav {
 }
 
 div.main {
+  margin: 0;
   margin-top: 69px;
   width: 100%;
   height: 100%;
@@ -148,6 +154,7 @@ div.main .slider .swiper-wrapper .slide div.contents div.quran h3 {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  padding: 0 20px;
 }
 div.main .slider .swiper-wrapper .slide div.contents div.quran a.read-more {
   display: inline-block;
@@ -384,6 +391,30 @@ div.main div.courses h1::after {
 }
 div.main div.courses h1 .our {
   color: #25a745;
+}
+@media (max-width: 776px) {
+  div.main div.courses h1 {
+    font-size: 150%;
+    text-align: center;
+    width: 300px;
+  }
+  div.main div.courses h1::before {
+    bottom: -10px;
+    left: 30%;
+    width: 30%;
+    height: 2px;
+    background-color: #25a745;
+  }
+  div.main div.courses h1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    width: 30%;
+    height: 2px;
+    background-color: #6c757d;
+  }
 }
 div.main div.courses div.contents {
   display: grid;
@@ -695,6 +726,30 @@ div.team div.meat-out-team h1::after {
 div.team div.meat-out-team h1 .our {
   color: #25a745;
 }
+@media (max-width: 776px) {
+  div.team div.meat-out-team h1 {
+    font-size: 150%;
+    text-align: center;
+    width: 300px;
+  }
+  div.team div.meat-out-team h1::before {
+    bottom: -10px;
+    left: 30%;
+    width: 30%;
+    height: 2px;
+    background-color: #25a745;
+  }
+  div.team div.meat-out-team h1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    width: 30%;
+    height: 2px;
+    background-color: #6c757d;
+  }
+}
 div.team div.meat-out-team div.contents p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 18px;
@@ -854,6 +909,31 @@ div.footer div.header div.header-content a h1::after {
 div.footer div.header div.header-content a h1 .our {
   color: #25a745;
 }
+@media (max-width: 776px) {
+  div.footer div.header div.header-content a h1 {
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+  }
+  div.footer div.header div.header-content a h1::before {
+    bottom: -10px;
+    left: 30%;
+    width: 30%;
+    height: 2px;
+    background-color: #25a745;
+  }
+  div.footer div.header div.header-content a h1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    width: 30%;
+    height: 2px;
+    background-color: #6c757d;
+  }
+}
 div.footer div.contents {
   display: flex;
   gap: 30px;
@@ -953,4 +1033,14 @@ div.whatsapp svg {
   height: 100%;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 776px) {
+  div.whatsapp {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
 }/*# sourceMappingURL=App.css.map */
