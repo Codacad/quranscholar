@@ -480,6 +480,11 @@ div.main div.courses div.contents div.course div.body a:hover::after {
   }
 }
 
+@media (max-width: 776px) {
+  div.main {
+    margin-top: 50px;
+  }
+}
 div.courses-page {
   display: flex;
   flex-direction: column;

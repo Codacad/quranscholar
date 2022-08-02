@@ -521,6 +521,12 @@ div.main{
   }
 }
 
+@media (max-width:776px){
+  div.main{
+    margin-top: 50px;
+  }
+}
+
 // Courses Page
 div.courses-page{
   display: flex;
