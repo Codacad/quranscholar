@@ -13,9 +13,9 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path='/quranscholar' element={<Main />}></Route>
-            <Route path='/quranscholar/courses' element={<Courses />}></Route>
-            <Route path='/quranscholar/quran' element={<Quran />}></Route>
+            <Route path='/' element={<Main />}></Route>
+            <Route path='/courses' element={<Courses />}></Route>
+            <Route path='/quran' element={<Quran />}></Route>
           </Routes>
           <Footer />
           <div className="whatsapp">
