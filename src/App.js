@@ -19,7 +19,7 @@ function App() {
           </Routes>
           <Footer />
           <div className="whatsapp">
-            <a href="https://wa.me/8057121113?text=Assalamualaikum" target='_blank'>
+            <a href="https://wa.me/+918057121113?text=Assalamualaikum" target='_blank'>
               <WhatsApp></WhatsApp>
             </a>
           </div>
