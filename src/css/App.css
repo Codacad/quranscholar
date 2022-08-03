@@ -526,7 +526,7 @@ div.courses-page {
 }
 @media (max-width: 1076px) {
   div.courses-page {
-    padding: 5%;
+    padding: 5% 0%;
   }
 }
 div.courses-page h1 {
