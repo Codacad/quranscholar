@@ -4,10 +4,12 @@ import fiqh from '../images/fiqh.avif'
 import hadith from '../images/hadith.avif'
 import seerah from '../images/seerah.avif'
 import { Link } from 'react-router-dom'
+import Sidenav from '../componets/Sidenav'
 
 const Courses = () => {
   return (
     <div className='courses-page'>
+        <Sidenav/>
         <h1><span className='our'>Our</span> Courses</h1>
         <div className="contents">
             <div className="course quran">

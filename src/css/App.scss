@@ -564,6 +564,7 @@ div.courses-page{
   justify-content: center;
   align-items: center;
   padding: 5% 10%;
+  margin-top: 50px;
   @media (max-width:1076px){
     padding: 5%;
   }
@@ -672,17 +673,20 @@ div.sidenav-wrapper{
   height: 100%;
   background-color: rgba(0,0,0,.5);
   z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   div.sidenav{
     position: relative;
     box-shadow: 1px 0px 10px rgba(0,0,0,.3);
-    width: 100%;
+    width: -100%;
     height: 100%;
     padding: 1em;
     background-color: $light;
 
     div.sidenav-header{
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       h1{
         a{
@@ -712,23 +716,43 @@ div.sidenav-wrapper{
         }
       }
     }
+    div.contents{
+      ul{
+        list-style: none;
+        margin-top: 30px;
+        li a{
+          display: block;
+          text-decoration: none;
+          padding: 10px;
+          color: #333;
+          opacity: .9;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          &:hover{
+           background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
   }
 
 
 }
 div.sidenav-wrapper.sidenav-wrapper-toggle{
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-div.sidenav-toggle{
-  margin-left: -100%;
+div.sidenav.sidenav-toggle{
+  margin-left: 0;
   transition: margin-left .3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @media (max-width:776px){
   div.sidenav-wrapper{
     display: block;
+    margin-top: 50px;
   }
 }
 

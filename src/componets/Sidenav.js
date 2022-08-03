@@ -4,26 +4,25 @@ import Close from '../icons/close.svg'
 
 const Sidenav = () => {
 
-    const handleSidenavToggle = () => {
+    const handleSidenavClose = () => {
         document.querySelector('.sidenav-wrapper').classList.remove('sidenav-wrapper-toggle')
         document.querySelector('.sidenav').classList.remove('sidenav-toggle')
     }
 
   return (
-    <div className='sidenav-wrapper sidenav-wrapper-toggle'>
-        <div className="sidenav sidenav-toggle">
+    <div className='sidenav-wrapper'>
+        <div className="sidenav">
             <div className="sidenav-header">
-                <h1><Link to="/" className='logo'>Quran Scholar</Link></h1>
-                <button onClick={() => handleSidenavToggle()}><img src={Close} alt="" /></button>
+                {/* <h1><Link to="/" className='logo'>Quran Scholar</Link></h1> */}
+                <button onClick={() => handleSidenavClose()}><img src={Close} alt="" /></button>
             </div>
             <div className="contents">
-                <Link to="/admission" className='admission'>Admission</Link>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li>
                     <Link to="/courses">Courses</Link>
                     </li>
-                    <li><Link to="/articles">Articles</Link></li>
+                    <li><a href='https://surveyheart.com/form/62e6d76024ff9216a53b014f' className='admission'>Admission</a></li>
                     <li><Link to="/gallery">Gallery</Link></li>
                     <li><Link to="/about">About</Link></li>
                 </ul>
