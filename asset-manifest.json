@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.5756883f.css",
-    "main.js": "/static/js/main.a5280d47.js",
+    "main.css": "/static/css/main.4d586636.css",
+    "main.js": "/static/js/main.72e38f3c.js",
     "static/media/Farman.png": "/static/media/Farman.ff8024046ddd931250d0.png",
     "static/media/hadith.avif": "/static/media/hadith.6d827c76b0f108108dfc.avif",
     "static/media/Mustafa.jpeg": "/static/media/Mustafa.5c64bac306215befd825.jpeg",
+    "static/media/arabic.jpg": "/static/media/arabic.070b26aeaed19d71a6a0.jpg",
     "static/media/img-1.jpeg": "/static/media/img-1.d64658038065fe5a279f.jpeg",
     "static/media/quran.jpg": "/static/media/quran.b68fa0d8b5b0e6eb4d3c.jpg",
     "static/media/img-4.jpeg": "/static/media/img-4.0ae3d1c60e7c7ee0b6d0.jpeg",
@@ -19,13 +20,14 @@
     "static/media/Afsar.jpeg": "/static/media/Afsar.253a1d3ec627695e8cf5.jpeg",
     "static/media/photo1.avif": "/static/media/photo1.0ee8a9839d8015379703.avif",
     "static/media/avatar.svg": "/static/media/avatar.ed0aa0799159e6695cf2e84b04c1ca0e.svg",
+    "static/media/urdu.webp": "/static/media/urdu.79ee9b9b396c3b00470b.webp",
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.21c094ffe1ddc3d685f350ef89339f81.svg",
-    "main.5756883f.css.map": "/static/css/main.5756883f.css.map",
-    "main.a5280d47.js.map": "/static/js/main.a5280d47.js.map"
+    "main.4d586636.css.map": "/static/css/main.4d586636.css.map",
+    "main.72e38f3c.js.map": "/static/js/main.72e38f3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5756883f.css",
-    "static/js/main.a5280d47.js"
+    "static/css/main.4d586636.css",
+    "static/js/main.72e38f3c.js"
   ]
 }
