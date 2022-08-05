@@ -3,6 +3,8 @@ import quran from '../images/quran.jpg'
 import fiqh from '../images/fiqh.avif'
 import hadith from '../images/hadith.avif'
 import seerah from '../images/seerah.avif'
+import Urdu from '../images/urdu.webp'
+import Arabic from '../images/arabic.jpg'
 import { Link } from 'react-router-dom'
 
 const Courses = () => {
@@ -52,7 +54,7 @@ const Courses = () => {
             </div>
             <div className="course arabic">
                 <header>
-                    <img src={quran} alt="" />
+                    <img src={Arabic} alt="" />
                     <h2>Arabic</h2>
                 </header>
                 <div className="body">
@@ -62,7 +64,7 @@ const Courses = () => {
             </div>
             <div className="course urdu">
                 <header>
-                    <img src={quran} alt="" />
+                    <img src={Urdu} alt="" />
                     <h2>Urdu</h2>
                 </header>
                 <div className="body">

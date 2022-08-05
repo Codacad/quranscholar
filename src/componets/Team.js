@@ -145,7 +145,7 @@ const Team = () => {
                     <img src={Avatar} alt="" />
                 </header>
                 <div className="body">
-                    <h2>Mudassria Habib</h2>
+                    <h2>Mudassira Habib</h2>
                     <h3>Teacher</h3>
                     <h4>Fazila</h4>
                 </div>
