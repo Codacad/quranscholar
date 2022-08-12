@@ -19,7 +19,7 @@ const Team = () => {
   return (
     <div className='team' id='team'>
         <div className="meat-out-team">
-            <h1>Meet Out Team</h1>
+            <h1>Meet Our Team</h1>
             <div className="contents">
                 <p>Our team is the foundation of our successful institute. We work together for education. We value education in consideration with the success in hereafter and in the world as well.</p>
                 <br />
