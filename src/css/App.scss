@@ -1131,3 +1131,43 @@ div.whatsapp{
 }
 
 // Gallery
+.gallery-wrapper{
+  .gallery{
+    .img-wrapper{
+      .img{
+        img{
+          position: relative;
+          z-index: 0;
+          &:hover{
+            background-color: rgba(0,0,0,.5);
+            &::before{
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,.5);
+              display: block;
+              z-index: 2;
+            }
+          }
+        }
+        .zoomout{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          color: #343a40;
+          transform: scale(0);
+        }
+        &:hover{
+          .zoomout{
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

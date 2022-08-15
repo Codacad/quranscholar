@@ -1074,4 +1074,34 @@ div.whatsapp svg {
     height: 40px;
     padding: 5px;
   }
+}
+.gallery-wrapper .gallery .img-wrapper .img img {
+  position: relative;
+  z-index: 0;
+}
+.gallery-wrapper .gallery .img-wrapper .img img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery-wrapper .gallery .img-wrapper .img img:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  z-index: 2;
+}
+.gallery-wrapper .gallery .img-wrapper .img .zoomout {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #343a40;
+  transform: scale(0);
+}
+.gallery-wrapper .gallery .img-wrapper .img:hover .zoomout {
+  transform: scale(1);
 }/*# sourceMappingURL=App.css.map */

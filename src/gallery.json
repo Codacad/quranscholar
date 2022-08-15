@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "imgName":"Smiling Children",
+        "imgURL":"image-gallery/img-1.jpg"
+    },
+    {
+        "id":2,
+        "imgName":"Reading Children",
+        "imgURL":"image-gallery/img-2.jpg"
+    },
+    {
+        "id":3,
+        "imgName":"Smiling Children",
+        "imgURL":"image-gallery/img-3.jpg"
+    },
+    {
+        "id":4,
+        "imgName":"Reading Children",
+        "imgURL":"image-gallery/img-4.jpg"
+    },
+    {
+        "id":5,
+        "imgName":"Reading Children",
+        "imgURL":"image-gallery/img-5.jpg"
+    }
+]
