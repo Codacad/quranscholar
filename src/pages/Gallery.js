@@ -1,23 +1,52 @@
-import { ZoomOutMap } from '@mui/icons-material'
+import { HideImage, ZoomInMap, ZoomOutMap } from '@mui/icons-material'
 import { Box, Grid, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import ImageGallery from  '../gallery.json'
 
 const Gallery = () => {
 
+//    const [hideZoomout, setHideZoomout] = useState(false)
+//    const [hideZoomin, setHideZoomin] = useState(false)
+   const [zoomInStyle, setZoomInStyle] = useState({display:"none"})
+   const [zoomOutStyle, setZoomOutStyle] = useState({display:"block"})
+
+
+    useEffect(() => {
+        document.querySelectorAll('.img-wrapper').forEach((img) => {
+            img.querySelector('.zoomout').addEventListener('click', function(){
+                img.classList.add('zoomout-img-wrapper')
+                setZoomOutStyle({
+                    display: "none"
+                })
+                setZoomInStyle({
+                    display:"block"
+                })
+            })
+            img.querySelector('.zoomin').addEventListener('click', function(){
+                img.classList.remove('zoomout-img-wrapper')
+                setZoomOutStyle({
+                    display: "block"
+                })
+                setZoomInStyle({
+                    display:"none"
+                })
+            })
+        })                 
+        
+    }, [])
+
   return (
-    <Box sx={{marginTop:"100px", padding:"2% 20% 5% 20%"}} className="gallery-wrapper">
+    <Box className="gallery-wrapper">
         <Typography variant='h3' textAlign={'center'} sx={{marginBottom:"20px"}}>
             Gallery
         </Typography>
-        <Typography className='gallery' component={"div"}  sx={{display:"grid", gap:"20px", gridTemplateColumns:"repeat(2, 1fr)"}} >
+        <Typography className='gallery' component={"div"}>
             {
             ImageGallery.map(img => {
-                return <Typography variant='div' component={'div'} className='img-wrapper'>
+                return <Typography variant='div' key={img.id} component={'div'} className='img-wrapper'>
                         <Typography className='img' component={"div"} sx={{position:"relative"}}>
                             <img 
-                            style={{width:"100%",
-                                    height:"400px", 
+                            style={{                                     
                                     objectFit:"cover", 
                                     borderRadius:"10px", 
                                     cursor:"pointer", 
@@ -27,7 +56,8 @@ const Gallery = () => {
                                 src={img.imgURL} 
                                 alt={img.imgName} 
                             />
-                            <ZoomOutMap className='zoomout'></ZoomOutMap>
+                            <ZoomOutMap className='zoomout' style={zoomOutStyle}></ZoomOutMap>
+                            <ZoomInMap className='zoomin' style={zoomInStyle}></ZoomInMap>
                         </Typography>
                     </Typography>
                 })
