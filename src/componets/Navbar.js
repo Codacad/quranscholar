@@ -25,6 +25,7 @@ const Navbar = () => {
                   <li><a href="#team">Our Team</a></li>
                   <li><Link to="/gallery">Gallery</Link></li>
                   <li><Link to="/about">About</Link></li>
+                  <li><Link to="/admission">Admission</Link></li>
               </ul>
               {/* <Link to="/admission" className='admission'>Admission</Link> */}
               <a className='admission' href="https://surveyheart.com/form/62e6d76024ff9216a53b014f" target='_blank'>Admission</a>
