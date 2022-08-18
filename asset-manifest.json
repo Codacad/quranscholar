@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbac0a4f.css",
-    "main.js": "/static/js/main.c0177fc9.js",
+    "main.js": "/static/js/main.75ae9baa.js",
     "static/media/Farman.png": "/static/media/Farman.ff8024046ddd931250d0.png",
     "static/media/hadith.avif": "/static/media/hadith.6d827c76b0f108108dfc.avif",
     "static/media/Mustafa.jpeg": "/static/media/Mustafa.5c64bac306215befd825.jpeg",
@@ -26,10 +26,10 @@
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.21c094ffe1ddc3d685f350ef89339f81.svg",
     "main.bbac0a4f.css.map": "/static/css/main.bbac0a4f.css.map",
-    "main.c0177fc9.js.map": "/static/js/main.c0177fc9.js.map"
+    "main.75ae9baa.js.map": "/static/js/main.75ae9baa.js.map"
   },
   "entrypoints": [
     "static/css/main.bbac0a4f.css",
-    "static/js/main.c0177fc9.js"
+    "static/js/main.75ae9baa.js"
   ]
 }
