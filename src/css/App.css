@@ -23,7 +23,6 @@ div.navbar {
   z-index: 20;
   left: 0;
   background-color: #022E57;
-  box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2), 0px -7px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgb(0, 0, 0);
   padding: 0 2%;
 }
 div.navbar nav div.nav-contents {
@@ -1181,13 +1180,20 @@ div.admission div.admission-contents {
 }
 div.admission div.admission-contents div.content-side {
   flex: 1;
-  background-color: #25a745;
+  background-image: url("https://images.pexels.com/photos/6281955/pexels-photo-6281955.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   padding: 5%;
 }
 div.admission div.admission-contents div.form-side {
   flex: 2;
   padding: 3% 5%;
+}
+div.admission div.admission-contents div.form-side form {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  border-radius: 10px;
 }
 div.admission div.admission-contents div.form-side form div.form-inputs {
   display: grid;
@@ -1221,7 +1227,7 @@ div.admission div.admission-contents div.form-side form div.form-inputs div.form
   font-size: 16px;
 }
 div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=text]:focus, div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=email]:focus {
-  box-shadow: 0px 0px 2px #333, 0px 0px 2px #333, 0px 0px 2px #333;
+  box-shadow: 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745;
 }
 div.admission div.admission-contents div.form-side form div.form-inputs .file {
   grid-column: span 2;

@@ -86,7 +86,7 @@ div.navbar{
   z-index: 20;
   left: 0;
   background-color: #022E57;
-  box-shadow: 0px -8px 10px rgba(0,0,0,.2), 0px -7px 10px rgba(0,0,0,.2), 0px -5px 10px rgba(0,0,0,2);
+  // box-shadow: 0px -8px 10px rgba(0,0,0,.2), 0px -7px 10px rgba(0,0,0,.2), 0px -5px 10px rgba(0,0,0,2);
   padding: 0 2%;
   nav{
     div.nav-contents{
@@ -1240,7 +1240,11 @@ div.admission{
     display: flex;
     div.content-side{
       flex:1;
-      background-color: #25a745;
+      background-image: url("https://images.pexels.com/photos/6281955/pexels-photo-6281955.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-repeat: no-repeat;
+      // background-position: center;
+      background-size: cover;
+      // background-attachment: fixed;
       min-height: 100vh;
       padding: 5%;
     }
@@ -1248,6 +1252,9 @@ div.admission{
       flex: 2;
       padding: 3% 5%;
       form{
+        box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+        padding: 3%;
+        border-radius: 10px;
         div.form-inputs{
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -1280,7 +1287,8 @@ div.admission{
               font-family: "Montserrat", sans-serif;
               font-size: 16px;
               &:focus{
-                box-shadow: 0px 0px 2px #333, 0px 0px 2px #333, 0px 0px 2px #333;
+                box-shadow: 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745,  0px 0px 2px #25a745,  0px 0px 2px #25a745,
+                            0px 0px 2px #25a745,  0px 0px 2px #25a745,  0px 0px 2px #25a745;
               }
             }
           }
