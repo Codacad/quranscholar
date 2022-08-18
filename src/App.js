@@ -7,6 +7,7 @@ import Footer from './componets/Footer';
 import Quran from './pages/Quran';
 import { WhatsApp } from '@mui/icons-material';
 import Gallery from './pages/Gallery';
+import Admission from './pages/Admission';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/courses' element={<Courses />}></Route>
             <Route path='/quran' element={<Quran />}></Route>
             <Route path='/gallery' element={<Gallery />}></Route>
+            <Route path='/admission' element={<Admission />}></Route>
           </Routes>
           <Footer />
           <div className="whatsapp">

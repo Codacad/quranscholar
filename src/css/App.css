@@ -1171,4 +1171,85 @@ div.whatsapp svg {
   .gallery-wrapper .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+div.admission {
+  margin-top: 100px;
+  min-height: 100vh;
+}
+div.admission div.admission-contents {
+  display: flex;
+}
+div.admission div.admission-contents div.content-side {
+  flex: 1;
+  background-color: #25a745;
+  min-height: 100vh;
+  padding: 5%;
+}
+div.admission div.admission-contents div.form-side {
+  flex: 2;
+  padding: 3% 5%;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs div.form-group:not(.agree) {
+  display: flex;
+  flex-direction: column;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs div.form-group .subtext {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #25a745;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs div.form-group label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=text], div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=email] {
+  outline: none;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=text]:focus, div.admission div.admission-contents div.form-side form div.form-inputs div.form-group input[type=email]:focus {
+  box-shadow: 0px 0px 2px #333, 0px 0px 2px #333, 0px 0px 2px #333;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .file {
+  grid-column: span 2;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .agree {
+  grid-column: span 2;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .agree input {
+  margin-right: 10px;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .agree ol {
+  list-style-type: none;
+  margin: 10px 0 0 30px;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .agree ol li {
+  margin: 5px 0;
+}
+div.admission div.admission-contents div.form-side form button.submit-btn {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #25a745;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
