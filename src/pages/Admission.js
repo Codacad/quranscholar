@@ -6,10 +6,8 @@ const Admission = () => {
         e.preventDefault()
         const fileInput = document.querySelector('#file')
         fileInput.click()
-
         fileInput.addEventListener('change', function(){
             const filename = fileInput.value.split('\\')
-            
             if(fileInput.value){
                 document.querySelector('.filename').textContent = filename[filename.length - 1]
             }else{
