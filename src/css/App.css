@@ -1265,6 +1265,7 @@ div.admission div.admission-contents div.form-side form div.form-inputs .file di
   font-weight: 500;
   font-size: 18px;
   width: 100%;
+  border-radius: 3px;
 }
 div.admission div.admission-contents div.form-side form div.form-inputs .file div.custom-file .upload span {
   display: block;
