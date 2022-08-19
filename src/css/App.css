@@ -1233,6 +1233,46 @@ div.admission div.admission-contents div.form-side form div.form-inputs div.form
 }
 div.admission div.admission-contents div.form-side form div.form-inputs .file {
   grid-column: span 2;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #eee;
+  padding: 1em;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .file div.custom-file {
+  background-color: #eee;
+  width: 50%;
+  margin: 10px 0;
+  box-shadow: 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745, 0px 0px 2px #25a745;
+  padding: 10px;
+  border-radius: 5px;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .file div.custom-file .upload {
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+  align-items: center;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 100%;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .file div.custom-file .upload a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #25a745;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+}
+div.admission div.admission-contents div.form-side form div.form-inputs .file div.custom-file .upload span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 div.admission div.admission-contents div.form-side form div.form-inputs .agree {
   grid-column: span 2;

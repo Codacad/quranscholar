@@ -1,6 +1,23 @@
-import React from 'react'
+import React , { useState, useEffect } from 'react'
 
 const Admission = () => {
+
+    const handleFileUpload = (e) => {
+        e.preventDefault()
+        const fileInput = document.querySelector('#file')
+        fileInput.click()
+
+        fileInput.addEventListener('change', function(){
+            const filename = fileInput.value.split('\\')
+            
+            if(fileInput.value){
+                document.querySelector('.filename').textContent = filename[filename.length - 1]
+            }else{
+                document.querySelector('.filename').textContent = "No file choosen..."
+            }
+        })
+    }
+
   return (
     <div className="admission">
         <div className="admission-contents">
@@ -46,7 +63,12 @@ const Admission = () => {
                         </div>
                         <div className="form-group file">
                             <label htmlFor="id">ID (E.g. Aadhar Card, Passport, VoterID )</label>
-                            <input type="file" name='id'/>
+                            <div className="custom-file">
+                                <input type="file" name='id' id='file' hidden="hidden"/>
+                                <button className='upload' onClick={handleFileUpload}>
+                                    <a href=''>UPLOAD</a> <span className='filename'>No file choosen...</span>
+                                </button>
+                            </div>
                         </div>
                         <div className="form-group agree">
                             <input type="checkbox" required/>
@@ -58,7 +80,7 @@ const Admission = () => {
                             </ol>
                         </div>
                     </div>
-                    <button className='submit-btn'>Submit</button>
+                    <button type='submit' className='submit-btn'>Submit</button>
                 </form>
             </div>
         </div>
